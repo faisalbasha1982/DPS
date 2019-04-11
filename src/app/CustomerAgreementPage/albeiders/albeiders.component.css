@@ -1,0 +1,64 @@
+.arbeiders {
+    background-image: linear-gradient(104deg, rgba(227, 118, 25, 0.25),rgba(159, 11, 25, 0.25));
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 10px; 
+    margin: auto;
+    width: 800px;
+}
+
+.btn-group {
+    width: 450px;
+
+}
+
+.btn {
+    width: 450px;
+    background-color: white;
+}
+
+.inputbox{
+    background-color: red;
+}
+
+.dropdown-menu{
+    width: 450px;
+
+}
+
+.div1{
+    width: 450px;
+    height: 50px;
+    display: inline-block;
+    margin:-2px;
+    font-size: 15px;
+    vertical-align: bottom;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.div2 {
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin:-2px;
+    vertical-align: bottom;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+.bigbox {
+    background-color: red;
+}
+
+.general {
+    background-color:burlywood;
+    font-size: 15px; 
+    padding: 5px; 
+    margin: auto;
+}
+.div1 .pari {
+    font-family: Arial;
+    font-weight:bold;}

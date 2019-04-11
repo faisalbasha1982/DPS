@@ -1,0 +1,32 @@
+<div class="arbeiders">
+    <app-title title="Arbeiders"></app-title>
+      <div class="div1">
+          <label class="pari"> Paritair Commitee: </label>
+          <div class="btn-group" dropdown>
+          <button dropdownToggle type="button" class="btn dropdown-toggle">
+              Paritair Commitee values <span class="caret"></span>
+            </button>
+             <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="divider dropdown-divider"></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+              </li>
+            </ul> 
+          </div>
+      </div>
+    
+      <div class="div2">
+          <label style="font-weight:bold;"> Coefficient Arbeiders: </label>
+          <input id="inputbox" style="width: 200px; height: 40px;  border-radius: 5px; padding: 7px;" />
+        </div>
+
+        <!-- <app-inputbox title="Arbeiders"></app-inputbox> -->
+
+
+  <div style="padding: 5px; margin-top: 25px; font-size:15px;">
+      <ui-switch size="small"> </ui-switch> &nbsp;
+      <label style="font-weight:bold;">Maaltijdcheques</label>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="facturatieParameters">
+        <app-title title="Facturatie Parameters"></app-title>
+
+     <div class="leftparameters">
+        <div class="inhaalrust">
+            <ui-switch size="small"></ui-switch> &nbsp;
+            <label class="titleBold">Inhaalrust</label>
+        </div>
+        <input id="inhaalrust" [formControlName]="inhaalrust" class="inputBoxInhaalrust" type="text"/>
+        <div class="ziekte">
+            <ui-switch  size="small"></ui-switch>  &nbsp;
+            <label class="titleBold">Ziekte</label>
+        </div>
+        <div class="feest">
+            <ui-switch  size="small"></ui-switch>  &nbsp;
+            <label class="titleBold">Feest</label>
+        </div>
+        <div class="mobile">
+            <ui-switch  size="small"></ui-switch>  &nbsp;
+            <label class="titleBold">Mobile</label>
+        </div>
+        <input id="mobilebox" class="inputBoxInhaalrust" type="text"/>
+     </div>
+     <div class="rightparameters">
+        <div class="Ploegprime">
+            <ui-switch  size="small"></ui-switch>&nbsp;
+            <label class="titleBold">Ploegprime</label>            
+              <div class="addButton">
+                
+                    <div class="addRow" *ngFor="let Ploegpremiere of form.get('arrayBox').controls; let i=index">
+                            <!-- The repeated alias template -->
+                            <div class="boxes">
+                                    <input id="PloegprimeBox1" type="text" [formControlName]="i">
+                                    <input id="PloegprimeBox2" type="text" [formControlName]="i">
+                                    <input id="PloegprimeBox3" type="text" [formControlName]="i"> 
+                                    <button (click)="addRows()" [hidden]="addNewRow" type="button" class="btnAdd"><img src="../../../assets/add.png" alt="" height="17.5" width="17.5" /></button>                 
+                                    <button (click)="removeRows(i)" [hidden]="removeLastRemove" type="button" class="btnRemove"><img src="../../../assets/add.png" alt="" height="17.5" width="17.5" /></button>
+                            </div>
+                             
+                    </div>
+              </div>
+        </div>
+        <!-- <div class="Andre">
+            <ui-switch  size="small"></ui-switch>&nbsp;
+            <label style="font-weight:bold;">Andre</label>
+            <div class="addRow">                 
+                <input id="inputbox" style="width: 200px; height: 35px; margin-right: 5px; display: inline-block; padding: 7px; border-radius:2px;" />
+                <input id="inputbox" style="width: 100px; height: 35px; margin-right: 5px; display: inline-block; padding: 7px; border-radius:2px;" />
+                <input id="inputbox" style="width: 50px; height: 35px; margin-right: 5px; display: inline-block; padding: 7px; border-radius:2px;" />
+            </div>            
+        </div> -->
+     </div>
+</div>
