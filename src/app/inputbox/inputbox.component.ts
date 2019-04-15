@@ -1,4 +1,5 @@
 import { Component, OnInit,Input, Output,EventEmitter } from '@angular/core';
+import { FormArray, FormBuilder, Validators, FormGroup, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-inputbox',
@@ -11,13 +12,23 @@ export class InputboxComponent implements OnInit {
   @Input() coefficient :number;
   @Output() public  childEvent = new EventEmitter();
 
-  constructor() {
-    console.log(this.coefficient);
+  public form: FormGroup;
+  public Ploegpremiere: FormArray;  
 
+  constructor() {
+        console.log(this.coefficient);
    }
 
   ngOnInit() {
     console.log(this.coefficient);
+
+    this.form = new FormGroup({
+      'coefficent': new FormControl('', [Validators.required]),
+    });  
+  }
+
+  get coefficent() { 
+    return this.form.get('coefficent'); 
   }
 
   displayCoeff(){
@@ -26,3 +37,4 @@ export class InputboxComponent implements OnInit {
   }
 
 }
+

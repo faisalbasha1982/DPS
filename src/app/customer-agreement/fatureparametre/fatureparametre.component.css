@@ -22,7 +22,6 @@
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 10px;
-
 }
 
 .addRow {
@@ -63,7 +62,6 @@
 }
 
 .facturatieParameters {
-    height: 290px; 
     padding: 10px; 
     margin: auto; 
     padding-bottom: 25px; 
@@ -71,6 +69,9 @@
     margin-left:0px;
     border-radius: 10px;
     width: 800px;
+    height: 500px;
+    resize: both;
+    overflow: auto;
 }
 
 .inputBoxInhaalrust {
@@ -111,4 +112,17 @@
     display: inline-block; 
     padding: 7px; 
     border-radius:5px;
+}
+
+.Ploegprime{
+    width: 400px;
+    clear:both;
+    height:auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility:hidden;
 }

@@ -1,4 +1,14 @@
 <div class="div2">
-    <label style="font-weight:bold;"> {{title}} </label>
-    <input class="inputbox" (blur)="displayCoeff()"  [(ngModel)]="coefficient" type="number" />
+  
+    <label class="titleBold"> {{title}} </label>
+
+    <input name="coefficent" formControlName="coefficent"  class="inputbox" (blur)="displayCoeff()" class="form-control" required minlength="1" [(ngModel)]="coefficient" type="number" />
+    <!-- <div *ngIf="coefficent.invalid && (coefficent.dirty || coefficent.touched)" class="alert alert-danger">
+        <div *ngIf="coefficent.errors.required">
+          Decimal Value is required.
+        </div>
+    </div> -->
+    <!-- <div style="background-color:aqua;">
+      <label>{{coefficient}}</label>
+    </div> -->
 </div>

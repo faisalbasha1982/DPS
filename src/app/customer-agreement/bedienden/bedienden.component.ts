@@ -12,12 +12,10 @@ export class BediendenComponent implements OnInit {
 
   constructor() { 
     console.log("parent ="+this.coefficient);
-
   }
 
   ngOnInit() {
     console.log("parent ="+this.coefficient);
-
   }
 
   displayCoeff(message) {

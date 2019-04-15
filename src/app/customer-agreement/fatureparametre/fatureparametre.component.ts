@@ -18,6 +18,9 @@ export class FatureparametreComponent implements OnInit {
   public form: FormGroup;
   public Ploegpremiere: FormArray;  
 
+  public formNew: FormGroup;
+  public Andre:FormArray;
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
@@ -29,9 +32,30 @@ export class FatureparametreComponent implements OnInit {
         this.createFirstServant()
       ])
     });
+
+    this.formNew = this.fb.group({
+      AndreBox1: [''],
+      AndreBox2: [''],
+      AndreBox3: [''],
+      arrayAndreBox: this.fb.array([
+        this.createAndre()
+      ])
+    });
   
   // set Ploegpremiere to the form control containing contacts
     this.Ploegpremiere = this.form.get('arrayBox') as FormArray;
+    this.Andre = this.formNew.get('arrayAndreBox') as FormArray;
+  }
+
+  createAndre(): FormGroup {
+    this.addNewRow = false;
+    this.removeLastRemove = true;
+
+    return this.fb.group({
+      AndreBox1: [''],
+      AndreBox2: [''],
+      AndreBox3: [''],   
+    });
 
   }
 
@@ -58,6 +82,20 @@ export class FatureparametreComponent implements OnInit {
 
   }
 
+  get arrayAndreBox() {
+    return this.Andre.get('arrayAndreBox') as FormArray;
+  }
+
+  addAndreRows() {
+    this.Andre.push(this.createAndre());
+  }
+
+  removeAndreRows(index) {
+    if(this.Andre.length != 1)
+      this.Andre.removeAt(index);
+  }
+
+
   get arrayBox() {
     return this.Ploegpremiere.get('arrayBox') as FormArray;
   }
@@ -67,8 +105,8 @@ export class FatureparametreComponent implements OnInit {
   }
 
   removeRows(index) {
-    if(index >0 )
-      this.Ploegpremiere.removeAt(index);      
+    if(this.Ploegpremiere.length != 1)
+      this.Ploegpremiere.removeAt(index);
   }
 
   replaceRows(index){

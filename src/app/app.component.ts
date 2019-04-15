@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Customer } from 'src/Customer';
+import { Contactperson } from 'src/Contactperson';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BEDRIJF AANMAKEN';
-  heroes = [
-    
-  ]
 }

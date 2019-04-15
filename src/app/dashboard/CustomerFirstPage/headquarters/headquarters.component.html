@@ -1,0 +1,117 @@
+<div class="headquarters">
+    <app-title title="Hoofdzetel"></app-title>
+    <form #userForm="ngForm">
+        <!-- {{ userForm.value |  json}} -->
+
+    <div class="container-fluid mb-4 topline">
+        <div class="div2">
+            <label style="font-weight:bold;"> Ondernemingsnummer: </label>
+            <input class="form-control" name="enterprise" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>
+       
+        <div class="switch">
+            <div style="margin-top:10px;">
+                <label style="font-weight:bold; margin-top: 20px;"> Krediet Check Ok? </label>
+            </div>
+            <ui-switch size="small"> </ui-switch> &nbsp;
+        </div>
+          
+        <div class="creditlimit">
+            <label style="font-weight:bold;"> Krediet Limit: </label>
+            <input class="form-control" name="creditlimit" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+
+            <!-- <app-inputbox (childEvent)="displayCoeff($event)" title="Krediet Limiet:" [(coefficient)]="coefficient"></app-inputbox> -->
+        </div>    
+    </div>
+
+    <div class="nextline">
+        <div class="nextdiv2">
+            <label style="font-weight:bold;"> Naam: </label>
+            <input class="form-control"  name="firstname" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>
+       
+        <div class="officialnaam">
+            <label style="font-weight:bold;"> Officialnaam: </label>
+            <input class="form-control"  name="Officialnaam" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>    
+
+        <div class="rectsvorm">
+            <!-- <label style="font-weight:bold;"> rechtsvorm: </label>
+            <input class="form-control"  id="inputbox" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" /> -->
+
+            <label style="font-weight:bold;"> Rechtsvorm: </label>
+
+            <div class="form-group">
+                <select class="custom-select" name= "Legalform" ngModel >
+                  <option selected> Iam interested </option>
+                  <option *ngFor="let topic of topics">{{topic}}</option>
+                </select>
+            </div>    
+        </div>    
+
+    </div>
+
+    <div class="nextline">
+        <div class="nextdiv2">
+            <label style="font-weight:bold;"> Straat: </label>
+            <input class="form-control"  name="street" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>
+       
+        <div class="officialnaam">
+            <label style="font-weight:bold;"> Nr: </label>
+            <input class="form-control"  name="streetnumber" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>    
+
+        <div class="rectsvorm">
+            <label style="font-weight:bold;"> Bus: </label>
+            <input class="form-control"  name="busno" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>    
+    </div>
+
+    <div class="nextline">
+        <div class="nextdiv2">
+            <label style="font-weight:bold;"> Plaats: </label>
+            <input class="form-control"  name="plates" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>
+       
+        <div class="officialnaam">
+            <label style="font-weight:bold;"> Postcode: </label>
+            <input class="form-control"  name="postcode" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>    
+
+        <div class="rectsvorm">
+            <label style="font-weight:bold;"> Land: </label>
+            <input class="form-control"  name="land" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel  />
+        </div>    
+    </div>
+
+    <div class="nextline">
+        <div class="nextdiv2">
+            <label style="font-weight:bold;"> Telefoonnummer: </label>
+            <input class="form-control"  name="Telefoonnummer" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel  />
+        </div>
+       
+        <div class="officialnaam">
+            <label style="font-weight:bold;"> Algemeen e-mail adres: </label>
+            <input class="form-control"  name="generalemailaddress" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>    
+     
+    </div>
+
+    <div class="nextline">
+        <div class="nextdiv9">
+            <label style="font-weight:bold;"> Facturatie e-mail adres: </label>
+            <input class="form-control"  name="contractfactemailaddress" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>
+       
+        <div class="officialnaam9">
+            <label style="font-weight:bold;"> Contracten e-mail adres: </label>
+            <input class="form-control"  name="contractemailaddress" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+        </div>    
+
+    </div>
+    </form>
+
+</div>
+
+

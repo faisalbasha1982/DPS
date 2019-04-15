@@ -10,15 +10,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { GeneralComponent } from './CustomerAgreementPage/general/general.component';
-import { AlbeidersComponent } from './CustomerAgreementPage/albeiders/albeiders.component';
+import { GeneralComponent } from './customer-agreement/general/general.component';
+import { AlbeidersComponent } from './customer-agreement/albeiders/albeiders.component';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
-import { BediendenComponent } from './CustomerAgreementPage/bedienden/bedienden.component';
-import { JobstudentenComponent } from './CustomerAgreementPage/jobstudenten/jobstudenten.component';
-import { FlexiComponent } from './CustomerAgreementPage/flexi/flexi.component';
-import { FatureparametreComponent } from './CustomerAgreementPage/fatureparametre/fatureparametre.component';
-import { TitleComponent } from './CustomerAgreementPage/title/title.component';
+import { BediendenComponent } from './customer-agreement/bedienden/bedienden.component';
+import { JobstudentenComponent } from './customer-agreement/jobstudenten/jobstudenten.component';
+import { FlexiComponent } from './customer-agreement/flexi/flexi.component';
+import { FatureparametreComponent } from './customer-agreement/fatureparametre/fatureparametre.component';
+import { TitleComponent } from './title/title.component';
 import { InputboxComponent } from './inputbox/inputbox.component';
+import { HeadquartersComponent } from '../app/dashboard/CustomerFirstPage/headquarters/headquarters.component';
+import { ContactPersonComponent } from '../app/dashboard/CustomerFirstPage/contact-person/contact-person.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { CustomerAgreementComponent } from './customer-agreement/customer-agreement.component';
 
   
 @NgModule({
@@ -33,6 +37,10 @@ import { InputboxComponent } from './inputbox/inputbox.component';
     FatureparametreComponent,
     TitleComponent,
     InputboxComponent,
+    HeadquartersComponent,
+    ContactPersonComponent,
+    ButtonsComponent,
+    CustomerAgreementComponent,
   ],
   imports: [
     BrowserModule,

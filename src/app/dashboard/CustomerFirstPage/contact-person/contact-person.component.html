@@ -1,0 +1,63 @@
+<div class="Contactpersoon">
+    <app-title title="Contactpersoon"></app-title>
+    <form #usernewForm="ngForm">
+            <!-- {{ usernewForm.value |  json}} -->
+    
+    <div class="topline">
+            <div class="div2">
+                <label style="font-weight:bold;"> Voorname: </label>
+                <input class="form-control" name="firstname" style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+            </div>
+           
+            <div class="newcreditlimit">
+                    <label style="font-weight:bold;"> Naam: </label>
+                    <input class="form-control"  name="lastname" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel  />
+            </div>    
+              
+            <div class="creditlimit">
+                    <label style="font-weight:bold;"> Taal: </label>
+                    <input class="form-control"  name="language" style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+            </div>    
+
+        
+    </div>
+
+    <div class="mid">
+
+            <div class="nextdiv2">
+                    <label style="font-weight:bold;"> Functie: </label>
+                    <input class="form-control"  name="functie"  style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel  />
+                </div>
+                       
+                <div class="officialnaam">
+                    <label style="font-weight:bold;"> e-mail address : </label>
+                    <input class="form-control"  name="email"  style="width: 400px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+                </div>    
+            
+    </div>
+   
+    <div class="lastline">
+
+            <div class="nextdiv2">
+                    <label style="font-weight:bold;"> Mobiel Nummer: </label>
+                    <input class="form-control"  name="mobile"  style="width: 300px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+            </div>
+                       
+            <div class="officialnaam">
+                    <label style="font-weight:bold;"> Telefoonnummer : </label>
+                    <input class="form-control"  name="telephone"  style="width: 200px; height: 40px; padding: 7px; border-radius: 5px;" ngModel />
+            </div>    
+
+            <div class="switch">
+                    <div style="margin-top:10px;">
+                        <label style="font-weight:bold; margin-top: 20px;"> Krediet Check Ok? </label>
+                    </div>
+                    <ui-switch size="small"> </ui-switch> &nbsp;
+            </div>
+            
+
+    </div>
+
+    </form>
+   
+</div>
