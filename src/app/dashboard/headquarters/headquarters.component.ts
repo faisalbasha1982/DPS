@@ -9,8 +9,11 @@ export class HeadquartersComponent implements OnInit {
 
   inputs: string[];
   topics: string[] = ["hello", "hi","how"];
+  land: string[] = ["belgie", "frenchie", "germanie"];
 
-  constructor() { 
+
+  constructor() {
+    
   }
 
   ngOnInit() {

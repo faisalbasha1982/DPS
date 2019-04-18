@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { UiSwitchModule } from 'ngx-toggle-switch';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
@@ -19,8 +18,8 @@ import { FlexiComponent } from './customer-agreement/flexi/flexi.component';
 import { FatureparametreComponent } from './customer-agreement/fatureparametre/fatureparametre.component';
 import { TitleComponent } from './title/title.component';
 import { InputboxComponent } from './inputbox/inputbox.component';
-import { HeadquartersComponent } from '../app/dashboard/CustomerFirstPage/headquarters/headquarters.component';
-import { ContactPersonComponent } from '../app/dashboard/CustomerFirstPage/contact-person/contact-person.component';
+import { HeadquartersComponent } from './dashboard/headquarters/headquarters.component';
+import { ContactPersonComponent } from './dashboard/contact-person/contact-person.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CustomerAgreementComponent } from './customer-agreement/customer-agreement.component';
 
